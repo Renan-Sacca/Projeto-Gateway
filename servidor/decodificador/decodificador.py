@@ -12,7 +12,7 @@ def decodificar(msg):
     #Separando as mensagens por ";"
     msg = msg.split(";")
 
-    #Abrir arquivo json padrão
+    #metodo de abrir o arquivo json padrão
     with open('./decodificador/rastreador.json', 'r') as json_file:
         dados = json.load(json_file)
 
