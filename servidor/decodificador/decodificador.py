@@ -66,7 +66,7 @@ def decodificar(msg):
             c+= "00"
             dados["ras_eve_input"] = [int(c[2]),int(c[3]),int(c[4])]
 
-        #Tensão da entrada analógica (em milivolts) tensão
+        #Tensão da entrada analógica (em milivolts) tensão.
         elif dados_quebrados[0] == "AD":
             dados["ras_eve_voltagem"] = dados_quebrados[1]
 
