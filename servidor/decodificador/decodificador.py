@@ -70,6 +70,6 @@ def decodificar(msg):
         elif dados_quebrados[0] == "AD":
             dados["ras_eve_voltagem"] = dados_quebrados[1]
 
-    #Retornando o arquivo json completo e o ID do aparelho para usar como resposta ACK
+    #Retornando o arquivo json completo e o ID do aparelho para usar como resposta ACK.
     dado_e_id = [dados,ID]
     return dado_e_id
