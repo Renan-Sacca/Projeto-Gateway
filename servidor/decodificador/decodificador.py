@@ -45,7 +45,7 @@ def decodificar(msg):
         elif dados_quebrados[0] == 'SV':
             dados["ras_eve_satelites"] = dados_quebrados[1]
 
-        #Passando id do aparelho pra fazer a pesquisa no banco de dados
+        # id do aparelho para fazer a pesquisa no banco de dados
         elif dados_quebrados[0] == 'ID':
             dados = banco_redis(dados,dados_quebrados[1])
             ID = dados_quebrados[1]
