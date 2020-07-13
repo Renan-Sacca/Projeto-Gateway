@@ -58,7 +58,7 @@ def decodificar(msg):
             dados["ras_eve_ignicao"] = int(a[2])
             b = dados_quebrados[1][1]
             b = bin(int(b))
-            # +0 caso ele seja 0 o valor em dec para não dar bug na hora de inserir
+            # +0 caso ele seja 0 o valor em decimal para não dar bug na hora de inserir
             b += "0"
             dados["ras_eve_output"] = [int(b[2]),int(b[3])]
             c = dados_quebrados[1][2]
